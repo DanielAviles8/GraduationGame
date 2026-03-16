@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private InputActionsHolder inputActionsHolder;
 
-    [SerializeField] private float _moveSpeed = 15f;
+    [SerializeField] private float _moveSpeed = 150f;
     [SerializeField] private float _gravity = 9.8f;
     [SerializeField] private float dashSpeed = 20f;
     [SerializeField] private float dashDistance = 5f;

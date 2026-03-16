@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         if (rb == null)
         {
-            Debug.LogError("No se encontró un Rigidbody en el enemigo.");
+            Debug.LogError("No se encontrï¿½ un Rigidbody en el enemigo.");
         }
     }
 
@@ -38,8 +38,8 @@ public class Enemy : MonoBehaviour
             movHor *= -1; 
         }
 
-        Vector3 velocity = new Vector3(movHor * speed, rb.velocity.y, rb.velocity.z);
-        rb.velocity = velocity;
+        Vector3 velocity = new Vector3(movHor * speed, rb.linearVelocity.y, rb.linearVelocity.z);
+        rb.linearVelocity = velocity;
     }
 
     void OnDrawGizmos()
